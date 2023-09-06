@@ -1,0 +1,15 @@
+{
+  "name": "my_generator",
+  "version": "1.0.0",
+  "description": "A app was created using HTML,CSS,JAVASCRIPT and NodeJS\r  This app have a very simple UI for better user experience \r  It can generate various things like joke,news and quotes\r  There are much features to be added which we are working on",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "hbs": "^4.2.0"
+  }
+}

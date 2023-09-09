@@ -43,29 +43,29 @@ function menuBar() {
     })
 }
 
-function iconClick(){    
-    quotes.forEach(elem => {
-        elem.addEventListener("click",()=>{
-            head[0].innerText = "Quotes Mania" 
-            info[0].innerText = "Enter Quote here"
-            btn[0].innerText = "Next Quote" 
-        })
-    });
-    jokes.forEach(elem => {
-        elem.addEventListener("click",()=>{
-            head[0].innerText = "Jokes Mania" 
-            info[0].innerText = "Enter Joke here"
-            btn[0].innerText = "Next Joke" 
-        })
-    });
-    news.forEach(elem => {
-        elem.addEventListener("click",()=>{
-            head[0].innerText = " Current Affairs" 
-            info[0].innerText = "Enter News here"
-            btn[0].innerText = "Next News" 
-        })
-    });
-}
+// function iconClick(){    
+//     quotes.forEach(elem => {
+//         elem.addEventListener("click",()=>{
+//             head[0].innerText = "Quotes Mania" 
+//             info[0].innerText = "Enter Quote here"
+//             btn[0].innerText = "Next Quote" 
+//         })
+//     });
+//     jokes.forEach(elem => {
+//         elem.addEventListener("click",()=>{
+//             head[0].innerText = "Jokes Mania" 
+//             info[0].innerText = "Enter Joke here"
+//             btn[0].innerText = "Next Joke" 
+//         })
+//     });
+//     news.forEach(elem => {
+//         elem.addEventListener("click",()=>{
+//             head[0].innerText = " Current Affairs" 
+//             info[0].innerText = "Enter News here"
+//             btn[0].innerText = "Next News" 
+//         })
+//     });
+// }
 
 menuBar();
-iconClick();
+// iconClick();

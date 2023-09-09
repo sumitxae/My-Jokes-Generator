@@ -4,182 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{{heading}}</title>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> -->
-    <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="style.css">
-    <style>
-@font-face {
-    font-family: neweddy;
-    src: url(./font/609a6c49f3f19df6c82675c3_NewEddy-Display.ttf);
-}
-@font-face {
-    font-family: sohne;
-    src: url(./font/609a6c49927eafcdc7fc3a15_Sohne-Leicht.ttf);
-}
-@font-face {
-    font-family: migra;
-    src: url(./font/609a6c4942325b29e583e448_Migra-Light.ttf);
-}
-
-        *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html,body{
-    height: 100%;
-    width: 100%;
-}
-#main{
-    position: relative;
-    min-height: 100vmin;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    background-color: #9DD9D2;
-    font-family: migra;
-    font-size: 100;
-    color: rgba(0, 0, 0, 0.692);
-}
-#nav{
-    height: 100vmin;
-    width: 5vw;
-    background-color: rgba(255, 255, 255, 0.58);
-    position: relative;
-    flex-direction: column;
-    display: flex;
-    padding: 5vmin 0;
-    z-index: 99;
-    align-items: center;
-    justify-content: space-between;
-}
-.nav-part{
-    height: 7%;
-    transition: all ease 0.5s;
-    width: 65%;
-    position: relative;
-    z-index: inherit;
-    font-size: 1.8em;
-}
-#user{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    border-radius: 50%;
-    background-color: rgba(32, 178, 171, 0.639);
-}
-#ham{
-    padding: 5px 8px;
-    background-color: rgba(32, 178, 171, 0.639);
-    flex-direction: column;
-    display: flex;
-    color: white;
-    font-size: 2em;
-    align-items: center;
-    border-radius: 50%;
-    justify-content: center;
-}
-#icons{
-    color: white;
-    height: 50%;
-    width: 65%;
-    flex-direction: column;
-    display: flex;
-    font-size: 1.7em;
-    justify-content: space-evenly;
-}
-#ham:hover{
-    rotate: 90deg;
-    background-color: rgb(32, 178, 171);
-}
-#user:hover{
-    background-color: rgb(32, 178, 171);
-}
-.ic-part{
-    position: relative;
-    z-index: 99;
-    /* width: 65%; */
-    height: 14%;
-    display: flex;
-    border-radius: 50%;
-    transition: all ease 0.5s;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(32, 178, 171, 0.639);
-}
-#ic-p{
-    color: black;
-    height: 50%;
-    width: 65%;
-    flex-direction: column;
-    display: flex;
-    align-items: end;
-    justify-content: space-evenly;
-}
-#ic-p p{
-    cursor: pointer;
-}
-.ic-part:hover{
-    background-color: rgb(32, 178, 171);
-}
-#info{
-    height: 85%;
-    width: 100%;
-    padding: 1% 1.8%;
-    border-radius: 1rem;
-}
-#hero{
-    margin-left: 22%;
-    height: 50vmin;
-    width: 50vmax;
-    border-radius: 1rem;
-}
-#info>h1{
-    font-size: 3.7em;
-    margin-bottom: 0.5em;
-}
-#info>p{
-    margin-left: 1em;
-    font-size: 1.8em;
-    margin-bottom: 1em;
-}
-button{
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 5%;
-    font-family: migra;
-    font-weight: 600;
-    font-size: 1.8em;
-    padding: 0.2em 1em;
-    border-radius: 1rem;
-    border: none;
-    color: rgba(0, 0, 0, 0.82);
-}
-#hidden{
-    position: absolute;
-    height: 100%;
-    flex-direction: column;
-    display: flex;
-    padding: 5vmin 0;
-    z-index: 99;
-    font-size: 2.7em;
-    align-items: center;
-    justify-content: space-between;
-    width: 18vw;
-    left: -400%;
-    top: 0;
-    z-index: 55;
-    opacity: 0;
-    background-color: rgba(255, 255, 255, 0.58);
-}
-#hidden>p{
-    cursor: pointer;
-    margin-left: 33%;
-}
-    </style>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
@@ -199,24 +27,22 @@ button{
                 <i class="ri-add-line"></i>
             </div>
             <div id="icons">
-                <div class="ic-part qo" id="quotes"><i class="ri-chat-quote-line"></i></div>
-                <div class="ic-part jo" id="jokes"><i class="ri-emotion-laugh-line"></i></div>
-                <div class="ic-part ne" id="news"><i class="ri-newspaper-line"></i></div>
-                <div class="ic-part ab" id="about"><i class="ri-hand-heart-line"></i></div>
+                <a href="/quotes"><div class="ic-part qo" id="quotes"><i class="ri-chat-quote-line"></i></div></a>
+                <a href="/jokes"><div class="ic-part jo" id="jokes"><i class="ri-emotion-laugh-line"></i></div></a>
+                <a href="/news"><div class="ic-part ne" id="news"><i class="ri-newspaper-line"></i></div></a>
+                <div class="ic-part ab" id="about"><a href="/about"><i class="ri-hand-heart-line"></i></div></a>
             </div>
             <div class="nav-part" id="user"><i class="ri-user-5-line"></i></div>
         </div>
         <div id="hero">
             <div id="info">
-                <h1>Joke Mania</h1>
-                <p>{{dets.joke}}</p>
+                <h1>{{heading}} Mania</h1>
+                <p>{{content}}</p>
             </div>
-            <a href="/"><button>Next Joke</button></a>
+            <a href='/{{type}}'><button>Next {{btnText}}</button></a>
         </div>
     </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script src="scripts/script.js"></script>
 </body>
 </html>
